@@ -1,0 +1,28 @@
+name: 大意の誤り
+description: 大意の誤りや、よりよい大意を知らせる
+title: "[訳] 吉井勇 詩篇（『近代作家追悼文集成 第三十四巻』より） "
+labels: ["訳"]
+body:
+  - type: input
+    id: block
+    attributes:
+      label: 段落ID
+      description: "行頭にある ID（例: yoshii-isamu-2e6b860f-000001）"
+    validations:
+      required: true
+  - type: textarea
+    id: before
+    attributes:
+      label: いまの大意
+    validations:
+      required: true
+  - type: textarea
+    id: after
+    attributes:
+      label: 直した大意
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 理由・根拠
